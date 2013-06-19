@@ -13,11 +13,9 @@ GetOptions(
 
 my @keys = map { split ',' } @_keys;
 
-my %args = (
-        'no-color' => $no_color
-    );
+my %args = ( 'no-color' => $no_color );
 
-if (scalar(@keys)) {
+if ( scalar(@keys) ) {
     $args{key} = \@keys;
 }
 
