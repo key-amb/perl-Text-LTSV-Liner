@@ -62,26 +62,33 @@ __END__
 
 =head1 NAME
 
-Text::LTSV::Liner - It's new $module
+Text::LTSV::Liner - Line filter of LTSV text
 
 =head1 SYNOPSIS
 
     use Text::LTSV::Liner;
+    my $liner = Text::LTSV::Liner->new( key => \@keys );
+    while(<>) {
+        $liner->run($_);
+    }
 
 =head1 DESCRIPTION
 
-Text::LTSV::Liner is ...
+Labeled Tab-separated Values (LTSV) format is a variant of Tab-separated
+Values (TSV). (cf: L<http://ltsv.org/>)
+This module simply filters text whose format is LTSV by specified keys.
+
+=head1 AUTHORS
+
+YASUTAKE Kiyoshi E<lt>yasutake.kiyoshi@gmail.com<gt>
 
 =head1 LICENSE
 
-Copyright (C) key-amb.
+Copyright (C) 2013 YASUTAKE Kiyoshi.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
-=head1 AUTHOR
-
-key-amb E<lt>yasutake.kiyoshi@gmail.comE<gt>
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.  That means either (a) the GNU General Public
+License or (b) the Artistic License.
 
 =cut
 
