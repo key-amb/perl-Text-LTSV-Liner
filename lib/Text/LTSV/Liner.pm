@@ -43,13 +43,16 @@ sub _parse_line {
     my @out;
     my @ordered = $self->{key} ? @{ $self->{key} } : @original;
     for my $_key (@ordered) {
-        next unless $stash{$_key};
-        my ( $key, $value ) = ( $_key, $stash{$_key} );
+        my ( $key, $value ) = ( $_key, $stash{$_key} || q{} );
         if ( not $self->{'no-color'} ) {
             $key   = color('green') . $key . color('reset');
             $value = color('magenta') . $value . color('reset');
         }
-        push( @out, join( q{:}, $key, $value ) );
+        if ($self->{'no-key'}) {
+            push(@out, $value);
+        } else {
+            push(@out, join(q{:}, $key, $value));
+        }
     }
 
     return join( "\t", @out );
@@ -80,7 +83,7 @@ This module simply filters text whose format is LTSV by specified keys.
 
 =head1 AUTHORS
 
-YASUTAKE Kiyoshi E<lt>yasutake.kiyoshi@gmail.com<gt>
+YASUTAKE Kiyoshi E<lt>yasutake.kiyoshi@gmail.comE<gt>
 
 =head1 LICENSE
 
