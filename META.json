@@ -1,10 +1,10 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Line filter of LTSV text",
    "author" : [
-      "key-amb <yasutake.kiyoshi@gmail.com>"
+      "YASUTAKE Kiyoshi <yasutake.kiyoshi@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.5.3, CPAN::Meta::Converter version 2.131560",
+   "generated_by" : "Minilla/v0.11.1, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "perl_5"
    ],
@@ -21,7 +21,8 @@
          "share",
          "eg",
          "examples",
-         "author"
+         "author",
+         "builder"
       ]
    },
    "prereqs" : {
@@ -42,7 +43,7 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008005"
+            "perl" : "5.008001"
          }
       },
       "test" : {
@@ -52,5 +53,19 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/key-amb/perl-Text-LTSV-Liner/issues"
+      },
+      "homepage" : "https://github.com/key-amb/perl-Text-LTSV-Liner",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/key-amb/perl-Text-LTSV-Liner.git",
+         "web" : "https://github.com/key-amb/perl-Text-LTSV-Liner"
+      }
+   },
+   "version" : "0.01",
+   "x_contributors" : [
+      "Yasutake Kiyoshi <yasutake.kiyoshi@dena.jp>"
+   ]
 }
