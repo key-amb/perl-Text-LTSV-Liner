@@ -81,6 +81,43 @@ Labeled Tab-separated Values (LTSV) format is a variant of Tab-separated
 Values (TSV). (cf: L<http://ltsv.org/>)
 This module simply filters text whose format is LTSV by specified keys.
 
+=head1 METHODS
+
+=head2 new
+
+Constructor.
+You can specify some options to filter lines.
+
+=over 4
+
+=item B<key>
+
+You can choose keys as array reference which you want to see in filtered output.
+
+=item B<no-color>
+
+If you prefer no-colorized output, specify this option.
+
+=item B<no-key>
+
+If you don't need to see keys in the output, specify this option.
+Then you'll see values only in the output.
+
+=back
+
+=head2 run
+
+Process lines and print output to STDOUT.
+
+=head2 parse
+
+    my $liner = Text::LTSV::Liner->new( key => \@keys );
+    for my $line (@lines) {
+        my $parsed = $liner->parse($line);
+    }
+
+This method is convinent if you want to use the filtered output in your codes.
+
 =head1 AUTHORS
 
 YASUTAKE Kiyoshi E<lt>yasutake.kiyoshi@gmail.comE<gt>
