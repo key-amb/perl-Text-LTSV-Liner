@@ -2,10 +2,12 @@ Revision history for Perl extension Text-LTSV-Liner
 
 {{$NEXT}}
 
+0.03 2014-07-25T19:17:03Z
+    - Add document for some methods
+
 0.02 2014-07-25T18:54:47Z
-    - add 'parse' method
+    - Add 'parse' method
 
 0.01 2014-03-15T11:16:22Z
-
-    - original version
+    - Initial release
 
