@@ -4,7 +4,7 @@
       "YASUTAKE Kiyoshi <yasutake.kiyoshi@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.11.1, CPAN::Meta::Converter version 2.131560",
+   "generated_by" : "Minilla/v0.13.0, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -36,7 +36,7 @@
       "develop" : {
          "requires" : {
             "Test::CPAN::Meta" : "0",
-            "Test::MinimumVersion" : "0.10108",
+            "Test::MinimumVersion::Fast" : "0.04",
             "Test::Pod" : "1.41",
             "Test::Spellunker" : "v0.2.7"
          }
@@ -64,8 +64,5 @@
          "web" : "https://github.com/key-amb/perl-Text-LTSV-Liner"
       }
    },
-   "version" : "0.01",
-   "x_contributors" : [
-      "Yasutake Kiyoshi <yasutake.kiyoshi@dena.jp>"
-   ]
+   "version" : "0.02"
 }
