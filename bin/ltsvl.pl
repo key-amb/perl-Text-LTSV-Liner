@@ -8,16 +8,18 @@ use Pod::Usage;
 use Text::LTSV::Liner;
 
 GetOptions(
-    'k|key=s'    => \my @_keys,
-    'no-color|C' => \my $no_color,
-    'no-key|K'   => \my $no_key,
-    'h|help'     => \my $help,
-    'man'        => \my $man,
+    'k|key=s'     => \my @_keys,
+    'no-color|C'  => \my $no_color,
+    'no-key|K'    => \my $no_key,
+    'no-buffer|B' => \my $no_buffer,
+    'h|help'      => \my $help,
+    'man'         => \my $man,
 );
 
 pod2usage(1)             if $help;
 pod2usage(-verbose => 2) if $man;
 
+$|        = 1 if $no_buffer;
 $no_color = 1 if $no_key;
 my @keys = map { split ',' } @_keys;
 
@@ -50,6 +52,7 @@ ltsvl.pl - Line filter of LTSV text
       --key|-k         keys to output
       --no-color|C     don't colorize output
       --no-key|K       output only values and don't colorize output
+      --no-buffer|B    don't buffering output
       --help|-h        brief help message
       --man            full documentaion
 
@@ -69,6 +72,11 @@ Don't colorize output.
 
 Don't output labels, but only values.
 If you specify this option, you won't get colorized output (like --no-color).
+
+=item B<--no-buffer|-B>
+
+Don't buffering output.
+If you specify this option, will be flush right away all print to currently selected output.
 
 =item B<--man>
 
