@@ -23,15 +23,15 @@ This module simply filters text whose format is LTSV by specified keys.
 Constructor.
 You can specify some options to filter lines.
 
-- __key__
+- **key**
 
     You can choose keys as array reference which you want to see in filtered output.
 
-- __no-color__
+- **no-color**
 
     If you prefer no-colorized output, specify this option.
 
-- __no-key__
+- **no-key**
 
     If you don't need to see keys in the output, specify this option.
     Then you'll see values only in the output.
