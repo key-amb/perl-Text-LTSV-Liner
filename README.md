@@ -51,11 +51,11 @@ This method is convinent if you want to use the filtered output in your codes.
 
 # AUTHORS
 
-YASUTAKE Kiyoshi <yasutake.kiyoshi@gmail.com>
+IKEDA Kiyoshi <yasutake.kiyoshi@gmail.com>
 
 # LICENSE
 
-Copyright (C) 2014 YASUTAKE Kiyoshi.
+Copyright (C) 2013-2017 IKEDA Kiyoshi.
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.  That means either (a) the GNU General Public

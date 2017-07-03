@@ -1,7 +1,7 @@
 {
    "abstract" : "Line filter of LTSV text",
    "author" : [
-      "YASUTAKE Kiyoshi <yasutake.kiyoshi@gmail.com>"
+      "IKEDA Kiyoshi <yasutake.kiyoshi@gmail.com>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v0.13.0, CPAN::Meta::Converter version 2.120921",

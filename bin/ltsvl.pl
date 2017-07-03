@@ -92,11 +92,11 @@ This script simply filters text whose format is LTSV by specified keys.
 
 =head1 AUTHORS
 
-YASUTAKE Kiyoshi E<lt>yasutake.kiyoshi@gmail.comE<gt>
+IKEDA Kiyoshi E<lt>yasutake.kiyoshi@gmail.comE<gt>
 
 =head1 LICENSE
 
-Copyright (C) 2013 YASUTAKE Kiyoshi.
+Copyright (C) 2013-2017 IKEDA Kiyoshi.
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.  That means either (a) the GNU General Public
